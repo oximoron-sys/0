@@ -8,30 +8,55 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-  
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fff0f5;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+        color: #d81b60;
+      }
+      .timeline-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+      div[class^="section-"] {
+        margin: 40px 0;
+        padding: 20px;
+        border-bottom: 2px dashed #fce4ec;
+      }
+      .text-box, .wish {
+        background: #fff8f9;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+      .profile-picture {
+        width: 150px;
+        border-radius: 50%;
+        margin: 20px 0;
+      }
+      .fake-btn {
+        background: #e91e63;
+        color: white;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    
-    
-
-    <!-- Card Overlay -->
-    <div class="card-overlay" id="cardOverlay">
-      <div class="birthday-card" id="birthdayCard">
-        <div class="card-front">
-          <div class="envelope-icon">💌</div>
-          <h1>For My Love</h1>
-          <p>Click to open your surprise...</p>
-        </div>
-        <div class="card-back">
-          <h2>Happy Girlfriend's Day 🪄! <br />🎉🎉🎉</h2>
-          <p>
-            Laila ji maine apke liye kuch banaya haiii...<br />
-            I hope aapko pasand ayega ! ✨
-          </p>
-          <button class="open-btn" id="openBtn">Start! 🎈</button>
-        </div>
-      </div>
-    </div>
 
     <!-- Main Timeline Container -->
     <div class="timeline-container" id="timelineContainer">
@@ -44,7 +69,7 @@
       </div>
 
       <div class="section-three">
-        <p>It's Girlfriend's Day!! (⁠ ⁠◜⁠‿⁠◝⁠ ⁠)⁠♡</p>
+        <p>It's Girlfriend's Day!! (⁠ ⁠◜⁠‿⁠◝⁠ ⁠)⁠♡</p>
       </div>
 
       <div class="section-four">
@@ -53,9 +78,7 @@
             Happy Girlfriend's Day, my love! Tum aaj sach me bohot radiant lag rahi ho.
             Tumhare sath bitaya har pal ek blessing ki tarah lagta hai, aur main bohot lucky hoon ki tum meri girlfriend ho. 
             Tum mere din roshan karti ho, har pal ko special banati ho, aur har yaad ko meetha kar deti ho. 
-            Cheers to us and all the amazing memories we're going to create together!
-          
-            💕
+            Cheers to us and all the amazing memories we're going to create together! 💕
           </p>
           <p class="fake-btn">Send 💌</p>
         </div>
@@ -69,14 +92,10 @@
           <strong>extraordinary</strong>
         </p>
         <p class="idea-4">Because...</p>
-        <p class="idea-5">Aap koi kaam  Extraordinary ho? ✨</p>
-        <p class="idea-6">
-          <span>2</span>
-          <span>3</span>
-        </p>
+        <p class="idea-5">Aap koi kaam Extraordinary ho? ✨</p>
       </div>
 
-    
+      <div class="section-wish">
         <img
           src="./img/op.jpg"
           alt="op"
@@ -93,22 +112,7 @@
 
       <div class="section-cake">
         <h2 class="cake-title">Now... Make Your Wish! 🌟</h2>
-        <div class="cake-wrapper">
-          <div class="realistic-cake" id="cake">
-            <div class="plate"></div>
-            <div class="layer layer-bottom"></div>
-            <div class="layer layer-middle"></div>
-            <div class="layer layer-top"></div>
-            <div class="icing"></div>
-            <div class="drip drip1"></div>
-            <div class="drip drip2"></div>
-            <div class="drip drip3"></div>
-          </div>
-        </div>
-        <p class="blow-instruction" id="blowInstruction">
-          🌬️ Blow into your mic to blow out the candles! 🌬️
-        </p>
-        <p class="blown-message" id="blownMessage">
+        <p class="blown-message">
           🎊 Your wish has been sent to the stars! 🎊<br />
           May all your dreams come true! ✨
         </p>
@@ -116,14 +120,10 @@
 
       <div class="section-nine">
         <p style="margin-bottom: 2rem">Happy Girlfriend's Day my Love 💕💘</p>
-        <br /><br /><br />
         <p>So... did you love it? 💕</p>
-        <p id="replay">Click here to experience it all over again! 🔄</p>
-        <p class="last-smile">Forever yours! 💖</p>
+        <p id="replay" style="color: #e91e63; font-weight: bold;">Forever yours! 💖</p>
       </div>
     </div>
-    <!-- GSAP Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="./script/index.js"></script>
+
   </body>
 </html>
